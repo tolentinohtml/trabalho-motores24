@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using Unity.VisualScripting;
 using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
+private AudioSource source;
 {
     public int velocidade =  10;
     public int forcaPulo = 7;
@@ -18,6 +20,7 @@ public class Player : MonoBehaviour
     {
         Debug.Log(message:"START");
         TryGetComponent (out rb);
+        TryGetComponent(out source);
     }
      private void OnCollisionEnter(Collision collision){
         if(!noChão && collision.gameObject.tag == "Chão"){
@@ -35,6 +38,8 @@ public class Player : MonoBehaviour
         rb.AddForce(direcao * velocidade * Time.deltaTime,ForceMode.Impulse);
 
 if(Input.GetKeyDown(KeyCode.Space)&& noChão){
+    //pulo
+    source.Play();
     rb.AddForce(Vector3.up * forcaPulo, ForceMode.Impulse);
     noChão = false;
 }

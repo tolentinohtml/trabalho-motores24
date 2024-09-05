@@ -8,6 +8,7 @@ public class Moedas : MonoBehaviour
     public int velocidadeGiro = 50;
  private void OnTriggerEnter(Collider other){
     if(other.gameObject.tag == "Player"){
+        FindObjectOfType<GameManager>().SubtrairMoedas(1);
         Destroy(gameObject);
     }
  }
