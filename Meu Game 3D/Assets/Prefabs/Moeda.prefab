@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7193612674266186161}
   - component: {fileID: 6176963464007572950}
   - component: {fileID: 7199559997879047081}
+  - component: {fileID: 3935543231111151022}
   m_Layer: 0
   m_Name: Moeda
   m_TagString: Moeda
@@ -102,7 +103,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -120,3 +121,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadeGiro: 50
+--- !u!135 &3935543231111151022
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7928857986854041268}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.52
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}

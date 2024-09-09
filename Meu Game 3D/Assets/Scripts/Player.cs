@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
+
 public class Player : MonoBehaviour
 {
     public int velocidade = 10;
@@ -12,6 +13,9 @@ public class Player : MonoBehaviour
     private Rigidbody rb;
     private AudioSource source;
     public bool noChão;
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -46,10 +50,19 @@ public class Player : MonoBehaviour
             rb.AddForce(Vector3.up * forcaPulo, ForceMode.Impulse);
             noChão = false;
         }
-
         if (transform.position.y < -10)
         {
+
+            FindObjectOfType<GameManager>().GameOver();
+
+
+        }
+
+        if (transform.position.y < -40)
+        {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+
         }
     }
 }
