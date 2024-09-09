@@ -1152,7 +1152,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2c7392d658cde844ba044103fcf6430a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fa71ce01a9971154e9d2923247913c6d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2347,7 +2347,7 @@ GameObject:
   - component: {fileID: 1871198880}
   - component: {fileID: 1871198879}
   m_Layer: 0
-  m_Name: Sphere (1)
+  m_Name: sol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2432,14 +2432,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871198878}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40729892, y: 0.08440476, z: -0.17694624, w: -0.8920054}
+  m_LocalRotation: {x: 0.36682472, y: 0.087834746, z: -0.1769846, w: -0.90906614}
   m_LocalPosition: {x: -20.8, y: 66.9, z: -9.1}
   m_LocalScale: {x: 5.15, y: 5.15, z: 5.15}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1238379956}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -44.167, y: -384.259, z: 32.407}
+  m_LocalEulerAnglesHint: {x: -39.483, y: -382.033, z: 30.027}
 --- !u!1 &1994252398
 GameObject:
   m_ObjectHideFlags: 0
